@@ -15,70 +15,69 @@
             <h2>/Music reviews/</h2>
         </header>
         <section class="textForm">
-            
-                <div class="proj">
-                    <h3>Project:</h3>
-                    <div class="textBox">
-                        <div class="box1">
-                            <label for="title">Project Name:</label>
-                            <input type="text" id="title" required>
-                        </div>
-                        <br>
-                        <div class="box2">
-                            <label for="artist">Artist:</label>
-                            <input type="text" id="artist" required>
-                        </div>
+
+            <div class="proj">
+                <h3>Project:</h3>
+                <div class="textBox">
+                    <div class="box1">
+                        <label for="title">Project Name:</label>
+                        <input type="text" id="title" required>
+                    </div>
+                    <br>
+                    <div class="box2">
+                        <label for="artist">Artist:</label>
+                        <input type="text" id="artist" required>
                     </div>
                 </div>
-                <div class="projType">
-                    <h3>Project Type:</h3>
-                    <div class="textBox">
-                        <input type="radio" name="projType">
-                        <label for="projType">Album/LP</label><br>
-                        <input type="radio" name="projType">
-                        <label for="projType">Mixtape/EP</label><br>
-                        <input type="radio" name="projType" required>
-                        <label for="projType">Single</label>
-                        <h4>Genre: <input list="genres" id="genres" name="genres" required></h4>
-                        <datalist id="genres">
-                            <option value="Rap">
-                            <option value="Rock">
-                            <option value="Pop">
-                        </datalist>
+            </div>
+            <div class="projType">
+                <h3>Project Type:</h3>
+                <div class="textBox">
+                    <input type="radio" name="projType">
+                    <label for="projType">Album/LP</label><br>
+                    <input type="radio" name="projType">
+                    <label for="projType">Mixtape/EP</label><br>
+                    <input type="radio" name="projType" required>
+                    <label for="projType">Single</label>
+                    <h4>Genre: <input list="genres" id="genres" name="genres" required></h4>
+                    <datalist id="genres">
+                        <option value="Rap">
+                        <option value="Rock">
+                        <option value="Pop">
+                    </datalist>
+                </div>
+            </div>
+            <div class="dates">
+                <h3>Dates:</h3>
+                <div class="textBox">
+                    <label for="release">Date Released:</label>
+                    <input type="date" id="release" required>
+                    <br><br>
+                    <label for="heard">First Listen:</label>
+                    <input type="date" id="heard" required>
+                </div>
+            </div>
+            <div class="opin">
+                <h3>Opinions:</h3>
+                <div class="textBox">
+                    <div class="box1">
+                        <label for="songs">Notable Songs:</label>
+                        <input type="text" id="songs">
+                    </div>
+                    <div class="box2">
+                        <label for="comments">Comments:</label>
+                        <input type="text" id="comments">
+                    </div>
+                    <br><br>
+                    <div class="scoreBox">
+                        <label for="score">Score:</label>
+                        <input type="range" min="0" max="100" value="50" class="score" id="score">
+                        <p>Score: <span id="demo"></span></p>
                     </div>
                 </div>
-                <div class="dates">
-                    <h3>Dates:</h3>
-                    <div class="textBox">
-                        <label for="release">Date Released:</label>
-                        <input type="date" id="release" required>
-                        <br><br>
-                        <label for="heard">First Listen:</label>
-                        <input type="date" id="heard" required>
-                    </div>
-                </div>
-                <div class="opin">
-                    <h3>Opinions:</h3>
-                    <div class="textBox">
-                        <div class="box1">
-                            <label for="songs">Notable Songs:</label>
-                            <input type="text" id="songs">
-                        </div>
-                        <div class="box2">
-                            <label for="comments">Comments:</label>
-                            <input type="text" id="comments">
-                        </div>
-                        <br><br>
-                        <div class="scoreBox">
-                            <label for="score">Score:</label>
-                            <input type="range" min="0" max="100" value="50" class="score" id="score">
-                            <p>Score: <span id="demo"></span></p>
-                        </div>
-                    </div>
-                </div>
-                <input type="submit" id="submit"> 
-            
+            </div>
         </section>
+        <input type="submit" id="submit">
     </body>
     <script src="script.js"></script>
 </html>
