@@ -1,0 +1,129 @@
+.scoreBox {
+    width: 100%;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Roboto Mono', monospace;
+    color: #b3b3b3;
+}
+
+h1 {
+    color: #1db954;
+    font-size: 4em;
+    margin-top: 0em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #212121;
+    margin-top: -.5em;
+    padding-left: 1em;
+}
+
+.proj, .projType, .dates, .opin {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: fit-content;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.textForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+h3 {
+    width: 100%;
+    color: #ffffff;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    width: 100%;
+    /* flex-grow: 1; */
+}
+
+.opin {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+.score {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 17px;
+    border-radius: 10px;
+    background: #b3b3b3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-tansition: .2s;
+    transition: opacity .2s;
+}
+
+.score:hover {
+    opacity: 1;
+}
+
+.score::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1db954;
+    cursor: pointer;
+}
+
+.score::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1db954;
+    cursor: pointer;
+}
+
+#submit {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #1db954;
+    border: none;
+    border-radius: 2em;
+    padding: 5px 10px 5px 10px;
+    margin-right: 2em;
+    float: right;
+}
+
+input[type=text] {
+    border-radius: 2rem;
+}
+
+input[name=genres] {
+    border-radius: 2rem;
+}
+
+input[type=date] {
+    border-radius: 2rem;
+    margin-right: 1em;
+}
+
+.box1 {
+    display: flex;
+    margin: 0 0 1em 0;
+    /* flex-direction: row; */
+    /* width: 100%; */
+}
+
+.box2 {
+    display: flex;
+    /* width: 100%; */
+}
