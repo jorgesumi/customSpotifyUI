@@ -12,7 +12,7 @@ h1 {
     color: #1db954;
     font-size: 4em;
     margin-top: 0em;
-    margin-bottom: 0em;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -21,9 +21,13 @@ h2 {
     padding-left: 1em;
 }
 
-.proj, .projType, .dates {
+.proj, .projType, .dates, .opin {
     display: inline-block;
+    flex-wrap: wrap;
     flex-grow: 1;
+    width: fit-content;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .textForm {
@@ -32,6 +36,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: 2em;
+    margin-right: 2em;
 }
 
 h3 {
@@ -88,8 +93,14 @@ h3 {
 }
 
 #submit {
+    font-size: 1em;
+    font-weight: bold;
     background-color: #1db954;
     border: none;
+    border-radius: 2em;
+    padding: 5px 10px 5px 10px;
+    margin-right: 2em;
+    float: right;
 }
 
 input[type=text] {
@@ -102,10 +113,12 @@ input[name=genres] {
 
 input[type=date] {
     border-radius: 2rem;
+    margin-right: 1em;
 }
 
 .box1 {
     display: flex;
+    margin: 0 0 1em 0;
     /* flex-direction: row; */
     /* width: 100%; */
 }
