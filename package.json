@@ -7,13 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
+  "dependencies": {
+    "ejs": "^3.18",
+    "express": "^4.18.2"
+  },
   "author": "Jorge Sumi",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.20"
-  },
-  "dependencies": {
-    "ejs": "^3.18",
-    "express": "^4.18.2"
   }
 }
