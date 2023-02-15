@@ -1,8 +1,8 @@
 const express = require('express');
-const app = express();
-const port = 8080
 const http = require('http');
 const fs = require('fs');
+const app = express();
+const port = 8080
 
 app.get('', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
