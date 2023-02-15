@@ -1,16 +1,21 @@
-const express = require('express');
-const http = require('http');
-const fs = require('fs');
-const app = express();
-const port = 8080
+const express = require('express')
+const http = require('http')
+const fs = require('fs')
+const app = express()
+const port = 3000
+
+// Static Files
+app.use(express.static('public'))
+app.use('/css', express.static(__dirname + 'public/css'))
+app.use('/css', express.static(__dirname + 'public/js'))
+
+// Set Views
+app.set('views', './views')
+app.set('view engine', 'ejs')
 
 app.get('', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html')
+    res.render('app')
 })
-http.createServer(function (req, res) {
-    fs.readFile('app.html', function (err, data) {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        res.write(data);
-        return res.end();
-    });
-}).listen(8080);
+
+// Listen  on port
+app.listen(port, () => console.info(`Listening on port ${port}`))
